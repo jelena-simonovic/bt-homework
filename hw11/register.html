@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="register.php" method="GET">
+        <fieldset style="width: fit-content;">
+            <label for="name"> Ime: </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="last_name"> Prezime: </label>
+            <input type="text" name="last_name" id="last_name">
+            <br>
+            <label> Pol: </label>
+            <br>
+            <label for="male"> Muski: </label>
+            <input type="radio" id="male" name="gender" value="Postovani">
+            <label for="female"> Zenski: </label>
+            <input type="radio" id="female" name="gender" value="Postovana">
+            <br>
+            <label for="email"> Email: </label>
+            <input type="email" name="email">
+            <br>
+            <label for="password"> Lozinka: </label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="re_password"> Ponovo ukucajte lozinku: </label>
+            <input type="password" name="re_password" id="re_password">
+            <br>
+            <label> Selektujte zeljene kurseve: </label>
+            <br>
+            <label for="php"> PHP </label>
+            <input type="checkbox" name="courses[]" id="php" value="php">
+            <label for="html"> HTML </label>
+            <input type="checkbox" name="courses[]" id="html" value="html">
+            <label for="css"> CSS </label>
+            <input type="checkbox" name="courses[]" id="css" value="css">
+            <label for="javascript"> JavaScript </label>
+            <input type="checkbox" name="courses[]" id="javascript" value="javascript">
+            <br>
+            <label for="file"> Izaberite sliku: </label>
+            <input type="file">
+            <br> <br>
+            <button type="submit"> Registrujte se </button>
+            <br> <br>
+            <button type="reset"> Ponistite podatke </button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
