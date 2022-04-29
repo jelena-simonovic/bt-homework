@@ -9,11 +9,11 @@ if (
     $pol = $_GET['gender'];
     $email = $_GET['email'];
     $lozinka = $_GET['password'];
-    $lista_kurseva = $_GET['courses'];
+    $lista_kurseva = implode(", ", $_GET['courses']);
     echo "$pol $ime $prezime, uspesno ste se registrovali na nasem sajtu. <br>
     Vasa lozinka je: $lozinka <br>
     Vas username je $email <br>
-    Vasi odabrani kursevi su: $lista_kurseva.";
+    Vasi odabrani kursevi su: " . $lista_kurseva . ".";
 } else {
     $ime = "";
     $prezime = "";
