@@ -10,12 +10,16 @@ if (
     $email = $_GET['email'];
     $lozinka = $_GET['password'];
     $lista_kurseva = $_GET['courses'];
-} else {
-    echo "Niste pravilno popunili podatke";
-}
-
-
-echo "$pol $ime $prezime, uspesno ste se registrovali na nasem sajtu. <br>
+    echo "$pol $ime $prezime, uspesno ste se registrovali na nasem sajtu. <br>
     Vasa lozinka je: $lozinka <br>
     Vas username je $email <br>
     Vasi odabrani kursevi su: $lista_kurseva.";
+} else {
+    $ime = "";
+    $prezime = "";
+    $pol = "";
+    $email = "";
+    $lozinka = "";
+    $lista_kurseva = "";
+    echo "Niste pravilno popunili podatke";
+}
