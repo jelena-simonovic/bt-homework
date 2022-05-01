@@ -40,6 +40,8 @@ if (empty($godine)) {
 } else if ($godine >= 36 && $godine <= 44 || $godine > 60) {
     $faktorSta = 0.6;
 }
+
+
 if (empty($aktivnost)) {
     echo "<br>";
 } else if ($aktivnost == "programer" || $aktivnost == "administrativni radnik" || $aktivnost == "menadzer") {
@@ -51,6 +53,7 @@ if (empty($aktivnost)) {
 } else {
     $faktorAkt = 150;
 }
+
 
 if (empty($tezina) || empty($godine) || empty($aktivnost)) {
     echo "Molimo, vratite se na prethodnu stranicu.";
