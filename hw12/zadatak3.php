@@ -1,6 +1,7 @@
 <?php
 
 
+
 $skup = range(0, rand(0, 200));
 
 $zbir = array_sum($skup);

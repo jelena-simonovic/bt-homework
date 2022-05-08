@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="zadatak2.php" method="GET">
+        <fieldset style="width: fit-content;">
+            <legend> Dimenzije zida: </legend>
+            <label for="zid_sirina"> Sirina zida (u metrima): </label>
+            <input type="number" step="any" id="zid_sirina" name="zid_sirina">
+            <br>
+            <label for="zid_visina"> Visina zida (u metrima): </label>
+            <input type="number" step="any" id="zid_visina" name="zid_visina">
+        </fieldset>
+        <br>
+        <fieldset style="width: fit-content;">
+            <legend> Dimenzije plocice: </legend>
+            <label for="plocica_sirina"> Sirina plocice (cm): </label>
+            <input type="number" step="any" id="plocica_sirina" name="plocica_sirina">
+            <br>
+            <label for="plocica_visina"> Visina plocice (cm): </label>
+            <input type="number" step="any" id="plocica_visina" name="plocica_visina">
+        </fieldset>
+        <br>
+        <button type="submit"> Izracunaj </button>
+    </form>
+</body>
+
+</html>

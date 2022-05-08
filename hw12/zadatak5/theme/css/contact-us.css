@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 5;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4e6c7a;
+    color: white;
+    height: 5vh;
+}
+
+.upper p {
+    margin-left: 1vw;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+.search input {
+    border: none;
+    border-radius: 0.25rem;
+    margin-right: 1vw;
+    text-align: center;
+}
+
+.header {
+    background-color: white;
+    width: 100vw;
+    height: 5vw;
+    border-bottom: 1px solid #16222A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: 'Water Brush', cursive;
+    font-size: 5vh;
+    margin-left: 2vw;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
