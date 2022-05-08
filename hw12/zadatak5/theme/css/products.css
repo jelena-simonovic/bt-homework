@@ -165,8 +165,73 @@ footer {
     background-color: #16222A;
     padding-top: 4vh;
     padding-bottom: 4vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-footer a {
+footer a,
+footer p {
     color: white;
+}
+
+@media(max-width: 992px) {
+    .banner img {
+        width: 80%;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product {
+        width: 30vw;
+    }
+
+    footer {
+        margin-top: 20vh;
+    }
+}
+
+@media(max-width: 576px) {
+    .upper {
+        display: none;
+    }
+
+    .header {
+        height: fit-content;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .container {
+        display: block;
+        margin-left: 10vh;
+        margin-top: 20vh;
+    }
+
+    .product {
+        width: 100%;
+        margin: 0;
+        height: 90vh;
+    }
+
+    .product img {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .top {
+        left: 75%;
+    }
+
+    footer {
+        margin-top: 20vh;
+    }
 }

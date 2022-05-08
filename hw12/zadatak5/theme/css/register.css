@@ -132,3 +132,27 @@ footer a,
 footer p {
     color: white;
 }
+
+@media(max-width: 992px) {
+    footer {
+        margin-top: 20vh;
+    }
+}
+
+@media(max-width: 576px) {
+    .upper {
+        display: none;
+    }
+
+    .header {
+        height: fit-content;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    footer {
+        margin-top: 20vh;
+    }
+}

@@ -161,3 +161,48 @@ footer a,
 footer p {
     color: white;
 }
+
+@media(max-width: 992px) {
+    .basic {
+        margin-left: 0;
+    }
+
+    .description {
+        margin: auto;
+    }
+
+    footer {
+        margin-top: 20vh;
+    }
+}
+
+@media(max-width: 576px) {
+    .upper {
+        display: none;
+    }
+
+    .header {
+        height: fit-content;
+    }
+
+    .basic {
+        display: block;
+    }
+
+    .basic_info {
+        text-align: center;
+        margin: auto;
+    }
+
+    .related img {
+        width: 25vw;
+    }
+
+    .product {
+        width: fit-content;
+    }
+
+    footer {
+        margin-top: 20vh;
+    }
+}
