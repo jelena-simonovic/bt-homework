@@ -7,6 +7,7 @@ body {
 header {
     position: fixed;
     z-index: 5;
+    top: 0;
 }
 
 .upper {
@@ -35,6 +36,10 @@ header {
     text-align: center;
 }
 
+.search img {
+    margin-right: 0.5vw;
+}
+
 .header {
     background-color: white;
     width: 100vw;
@@ -61,4 +66,69 @@ header nav ul li {
 a {
     text-decoration: none;
     color: black;
+}
+
+.search img {
+    margin-right: 0.5vw;
+}
+
+.container {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 30vw;
+    background-color: #97baca;
+    border-radius: 00.25rem;
+    padding: 1vw;
+    margin-bottom: 25vh;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 3vh;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+    padding: 0.75vw;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+}
+
+footer {
+    background-color: #16222A;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+}
+
+footer a,
+footer p {
+    color: white;
 }

@@ -35,6 +35,11 @@ header {
     text-align: center;
 }
 
+.search img {
+    margin-right: 0.5vw;
+}
+
+
 .header {
     background-color: white;
     width: 100vw;
@@ -72,7 +77,6 @@ a {
 
 main {
     display: flex;
-    width: 100vw;
 }
 
 aside {
@@ -91,7 +95,7 @@ input[type="checkbox"] {
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 85vw;
+    width: 70vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -159,8 +163,8 @@ input[type="checkbox"] {
 
 footer {
     background-color: #16222A;
-
-    padding: 10vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 footer a {

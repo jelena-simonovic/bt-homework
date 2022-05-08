@@ -35,6 +35,10 @@ header {
     text-align: center;
 }
 
+.search img {
+    margin-right: 0.5vw;
+}
+
 .header {
     background-color: white;
     width: 100vw;
@@ -61,4 +65,99 @@ header nav ul li {
 a {
     text-decoration: none;
     color: black;
+}
+
+.container {
+    display: grid;
+}
+
+.basic {
+    margin-top: 20vh;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.basic_info {
+    text-align: left;
+    width: 35%;
+}
+
+.basic_info p {
+    margin-top: 5vh;
+}
+
+.description {
+    text-align: left;
+    width: 70%;
+    margin: 6vh 0 5vh 10vw;
+}
+
+.related {
+    display: flex;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.product {
+    width: 20vw;
+    height: 60vh;
+    display: block;
+}
+
+.product h4 {
+    color: #25455a8e;
+}
+
+.product img {
+    width: 15vw;
+    height: 25vh;
+    margin-top: 5vh;
+}
+
+.product p {
+    font-size: small;
+    color: rgb(68, 66, 66);
+}
+
+span {
+    color: black;
+    font-weight: 600;
+}
+
+.product:hover {
+    background-color: #3a60732f;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+    padding: 0.75vw;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5vh;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+}
+
+
+footer {
+    background-color: #16222A;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a,
+footer p {
+    color: white;
 }

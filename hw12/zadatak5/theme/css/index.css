@@ -16,6 +16,7 @@ header {
     background-color: #4e6c7a;
     color: white;
     height: 5vh;
+    width: 100vw;
 }
 
 .upper p {
@@ -31,8 +32,12 @@ header {
 .search input {
     border: none;
     border-radius: 0.25rem;
-    margin-right: 1vw;
+    margin-right: 0.5vw;
     text-align: center;
+}
+
+.search img {
+    margin-right: 0.5vw;
 }
 
 .header {
@@ -61,4 +66,41 @@ header nav ul li {
 a {
     text-decoration: none;
     color: black;
+}
+
+main img {
+    width: 80vw;
+    margin: 20vh auto 2vh auto;
+}
+
+.sentelle {
+    color: #16222A;
+}
+
+h2 {
+    color: #4e6c7a;
+}
+
+main p {
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+main p a {
+    color: #4e6c7a;
+}
+
+footer {
+    background-color: #16222A;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+}
+
+footer a {
+    color: white;
 }
