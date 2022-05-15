@@ -28,4 +28,4 @@ function result($totalFuel, $fuelUseByTruck, $remainingFuelValue = null)
     }
 }
 
-echo result(55, 15);
+echo result(55, 14);

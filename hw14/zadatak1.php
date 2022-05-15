@@ -20,3 +20,5 @@ if (checkdate($month, $day, $year)) {
 } else {
     echo "Not a valid date.";
 }
+
+// Ne ide pre nove ere, ne uracunava diskrepance u kalendarima i lokalitetima
