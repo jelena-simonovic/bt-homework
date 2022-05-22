@@ -1,21 +1,5 @@
 <?php
 
-
-function searchUsers($users, $searchContent = "")
-{
-    foreach ($users as $key => $value) {
-        $filteredUsers = [];
-        if ((str_contains($value['name'], $searchContent) !== false) ||
-            (str_contains($value['last_name'], $searchContent) !== false)
-        ) {
-            $filteredUsers = $value;
-            return $filteredUsers;
-        } else {
-            die('No such entries!');
-        }
-    }
-}
-
 $users = [
     [
         'name' => 'Pera',
@@ -34,9 +18,15 @@ $users = [
     ]
 ];
 
+$searchContent = 'Pera';
+
+$filteredUsers = array_filter($users, function ($value) use ($searchContent) {
+    return ($value['name'] == $searchContent);
+});
 
 echo "<pre>";
-
-print_r(searchUsers($users, 'Simic'));
-
+print_r($filteredUsers);
 echo "</pre>";
+
+
+// Evo na drugi nacin, ona prva verzija nije dobro radila
