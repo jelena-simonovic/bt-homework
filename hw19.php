@@ -45,14 +45,10 @@ class ContactList extends Contact
     public function setValue($contacts, $phone, $email)
     {
         $this->contacts = $contacts;
-        $this->phone = $phone;
-        $this->email = $email;
     }
     public function getValue()
     {
         return $this->contacts;
-        return $this->phone;
-        return $this->email;
     }
     public function addContact($contact1, $contact2, $contact3)
     {
