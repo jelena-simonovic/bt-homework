@@ -11,9 +11,9 @@ if (!empty($_GET['filter'])) {
 }
 
 if (!empty($_GET['sort-by']) && ($_GET['sort-by'] == $ORDER_BY_PRICE_ASC)) {
-   return sortAscending();
+   sortAscending();
 } else if (!empty($_GET['sort-by']) && ($_GET['sort-by'] == $ORDER_BY_PRICE_DESC)) {
-   return sortDescending();
+   sortDescending();
 } else {
    $products = getAvailableProducts();
 }

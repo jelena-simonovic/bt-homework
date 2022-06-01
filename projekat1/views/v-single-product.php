@@ -6,9 +6,9 @@
                 <img src="<?php echo htmlspecialchars($product['img']); ?>" alt="..." width="350px">
             </div>
             <div class="col-5">
-                <a class="btn btn-secondary" href="./single-product-page.php?stranica=<?php echo getNextProduct($productId); ?>"> Next product</a>
+                <a class="btn btn-secondary" href="./single-product-page.php?stranica=<?php echo $product['id']; ?>"> Next product</a>
                 <a class="btn btn-dark" href="./products-page.php"> All products</a>
-                <a class="btn btn-secondary" href="./single-product-page.php?stranica=<?php echo getPreviousProduct($productId); ?>"> Previous product</a>
+                <a class="btn btn-secondary" href="./single-product-page.php?stranica=<?php echo $product['id']; ?>"> Previous product</a>
                 <p class="mt-5"> Price: $<?php echo $product['price']; ?></p>
                 <p class="mt-5"> Brand: <?php echo $product['brand']; ?></p>
                 <p class="mt-5"> Category: <?php echo $product['category']; ?></p>

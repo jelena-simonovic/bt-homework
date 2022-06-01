@@ -241,9 +241,7 @@ function getOneProductById($id)
 function sortAscending()
 {
     $products = getAvailableProducts();
-    foreach ($products as $key => $value) {
-        $price[$key] = $value['price'];
-    }
+    $price = array_column($products, 'price');
     return array_multisort($price, SORT_ASC, $products);
 }
 
