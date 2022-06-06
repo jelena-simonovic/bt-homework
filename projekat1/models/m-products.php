@@ -1,8 +1,8 @@
 <?php
 
 
-$ORDER_BY_PRICE_ASC = 'price-asc';
-$ORDER_BY_PRICE_DESC = 'price-desc';
+const ORDER_BY_PRICE_ASC = 'price-asc';
+const ORDER_BY_PRICE_DESC = 'price-desc';
 
 function getAllProducts()
 {
@@ -15,9 +15,10 @@ function getAllProducts()
         top notes of orange blossom combined with jasmine and tuberose.",
             'img' => 'public/theme/img/givenchy.jpg',
             'price' => '98.99',
-            'category' => 'perfume',
+            'category' => ['floral', 'for_her'],
             'brand' => 'Givenchy',
-            'available' => false
+            'available' => false,
+            'related' => 'some_value'
         ],
         [
             'id' => 2,
@@ -27,9 +28,10 @@ function getAllProducts()
         Aromatic Spicy fragrance created to provoke.",
             'img' => 'public/theme/img/guilty.jpg',
             'price' => '145.99',
-            'category' => 'perfume',
+            'category' => ['woody', 'for_him'],
             'brand' => 'Gucci',
-            'available' => false
+            'available' => false,
+            'related' => 'some_value'
         ],
         [
             'id' => 3,
@@ -38,9 +40,10 @@ function getAllProducts()
         a world of young and delicate contemporary femininity, where freshness is considered a necessity.",
             'img' => 'public/theme/img/laura.jpg',
             'price' => '55.89',
-            'category' => 'eau de toilette',
+            'category' => ['for_her', 'fresh'],
             'brand' => 'Laura Biagotti',
-            'available' => true
+            'available' => true,
+            'related' => 'some_value'
         ],
         [
             'id' => 4,
@@ -49,9 +52,10 @@ function getAllProducts()
         Mahonial are embraced by Wood notes resulting in a unique and sophisticated fragrance.",
             'img' => 'public/theme/img/missoni.jpg',
             'price' => '65.99',
-            'category' => 'perfume',
+            'category' => ['for_her', 'floral'],
             'brand' => 'MISSONI',
-            'available' => false
+            'available' => false,
+            'related' => 'some_other_value'
         ],
         [
             'id' => 5,
@@ -61,9 +65,10 @@ function getAllProducts()
         grapefruit.",
             'img' => 'public/theme/img/versace.jpg',
             'price' => '89.99',
-            'category' => 'eau de toilette',
+            'category' => ['for_him', 'spicy'],
             'brand' => 'Versace',
-            'available' => true
+            'available' => true,
+            'related' => 'some_value'
         ],
         [
             'id' => 6,
@@ -73,34 +78,37 @@ function getAllProducts()
         sensual fragrance.",
             'img' => 'public/theme/img/cavalli.jpg',
             'price' => '77.79',
-            'category' => 'eau de perfume',
+            'category' => ['spicy', 'for_her'],
             'brand' => 'Roberto Cavalli',
-            'available' => true
+            'available' => true,
+            'related' => 'some_other_value'
         ],
         [
             'id' => 7,
-            'title' => "Lady Million Empire Woman",
+            'title' => "Lady Million Empire",
             'description' => "The sweet and fruity fragrance of Lady Million Empire is a chypre floral 
         scent for women that blends fruity, floral and earthy accords. Launched in 2019 by the 
         design house of Paco Rabanne, this fragrance opens with top notes of orange, red currant 
         and neroli.",
             'img' => 'public/theme/img/paco.jpg',
             'price' => '99.99',
-            'category' => 'perfume',
+            'category' => ['floral', 'for_her'],
             'brand' => 'Paco Rabanne',
-            'available' => true
+            'available' => true,
+            'related' => 'some_value'
         ],
         [
             'id' => 8,
-            'title' => "Boss The Scent Absulute For Him",
+            'title' => "Absulute",
             'description' => "Explore the rich intensity of BOSS The Scent Absolute for Him fragrance. 
         Spicy Ginger draws the senses into a potent accord of Maninka fruit and Mondia roots, 
         wrapped in elegant Vetiver for an absolutely addictive Eau de Parfum.",
             'img' => 'public/theme/img/hugo.jpg',
             'price' => '68.89',
-            'category' => 'eau de toilette',
+            'category' => ['fruity', 'for_him'],
             'brand' => 'Hugo Boss',
-            'available' => true
+            'available' => true,
+            'related' => 'some_other_value'
         ],
         [
             'id' => 9,
@@ -110,9 +118,10 @@ function getAllProducts()
         and to be remembered. ",
             'img' => 'public/theme/img/trussardi.jpg',
             'price' => '59.99',
-            'category' => 'eau de perfume',
+            'category' => ['spicy', 'for_him'],
             'brand' => 'Trussardi',
-            'available' => true
+            'available' => true,
+            'related' => 'some_value'
         ],
         [
             'id' => 10,
@@ -121,9 +130,10 @@ function getAllProducts()
          of fresh raspberry, frankincense, and vanilla, with a bewitching heart of Black Rose essence.",
             'img' => 'public/theme/img/tresor.jpg',
             'price' => '78.99',
-            'category' => 'floral', 'eau de toilette',
+            'category' => ['floral', 'for_her'],
             'brand' => 'Lancome',
-            'available' => false
+            'available' => false,
+            'related' => 'some_value'
         ],
         [
             'id' => 11,
@@ -132,9 +142,10 @@ function getAllProducts()
         freshness. The thrilling black vibration of woody vetiver brings strength and intensity. ",
             'img' => 'public/theme/img/lacoste.jpg',
             'price' => '56.89',
-            'category' => 'eau de toilette',
+            'category' => ['fresh', 'for_him'],
             'brand' => 'Lacoste',
-            'available' => true
+            'available' => true,
+            'related' => 'some_other_value'
         ],
         [
             'id' => 12,
@@ -144,9 +155,10 @@ function getAllProducts()
         magnetic fruity gourmand and the scent of freedom.",
             'img' => 'public/theme/img/burberry.jpg',
             'price' => '141.89',
-            'category' => 'eau de perfume',
+            'category' => ['fruity', 'for_her'],
             'brand' => 'Burberry',
-            'available' => true
+            'available' => true,
+            'related' => 'some_value'
         ],
         [
             'id' => 13,
@@ -155,9 +167,10 @@ function getAllProducts()
         A perfect combination of audacity, beauty, and sensuality. ",
             'img' => 'public/theme/img/florence.jpg',
             'price' => '128.99',
-            'category' => 'eau de toilette',
+            'category' => ['floral', 'for_her'],
             'brand' => 'Roberto Cavalli',
-            'available' => true
+            'available' => true,
+            'related' => 'some_other_value'
         ],
         [
             'id' => 14,
@@ -167,9 +180,10 @@ function getAllProducts()
         happy moments.",
             'img' => 'public/theme/img/guerlain.jpg',
             'price' => '97.89',
-            'category' => 'perfume',
+            'category' => ['unisex', 'woody'],
             'brand' => 'Guerlain',
-            'available' => true
+            'available' => true,
+            'related' => 'some_other_value'
         ],
         [
             'id' => 15,
@@ -179,9 +193,10 @@ function getAllProducts()
         Bergamot, Cardamom, fresh Pineapple and Papaya. ",
             'img' => 'public/theme/img/ck.jpg',
             'price' => '55.89',
-            'category' => 'eau de perfume',
+            'category' => ['unisex', 'fresh'],
             'brand' => 'Calvin Klein',
-            'available' => true
+            'available' => true,
+            'related' => 'some_other_value'
         ],
         [
             'id' => 16,
@@ -191,9 +206,10 @@ function getAllProducts()
         fresh perfumes, each unique fragrance is bound by an exclusive mix.",
             'img' => 'public/theme/img/salvatore.jpg',
             'price' => '91.99',
-            'category' => 'perfume',
+            'category' => ['fresh', 'for_her'],
             'brand' => 'Salvatore Ferragamo',
-            'available' => true
+            'available' => true,
+            'related' => 'some_other_value'
         ]
     ];
 
@@ -212,6 +228,16 @@ function getAvailableProducts()
     return $availabaleProducts;
 }
 
+function getOneProductById($id)
+{
+    $products = getAvailableProducts();
+    foreach ($products as $product) {
+        if ($product['id'] == $id) {
+            return $product;
+        }
+    }
+}
+
 function filteredProducts($products, $searchTerm)
 {
     $filteredProducts = [];
@@ -228,48 +254,75 @@ function filteredProducts($products, $searchTerm)
     return $filteredProducts;
 }
 
-function getOneProductById($id)
+function filteredByCategory($products, $category)
+{
+    $filteredProducts = [];
+    foreach ($products as $product) {
+        $a = implode($category);
+        $categoryString = implode(" ", $product['category']);
+        if (str_contains($categoryString, $a)) {
+            $filteredProducts[] = $product;
+        }
+    }
+    return $filteredProducts;
+}
+
+function filteredByFAmily($products, $scentFamily)
+{
+    $filteredProducts = [];
+    foreach ($products as $product) {
+        $a = implode($scentFamily);
+        $scentFamilyString = implode(" ", $product['category']);
+        if (str_contains($scentFamilyString, $a)) {
+            $filteredProducts[] = $product;
+        }
+    }
+    return $filteredProducts;
+}
+
+function sortProducts($products, $sortBy)
+{
+    $sorting = [];
+    foreach ($products as $key => $val) {
+        array_push($sorting, $val['price']);
+    }
+    switch ($sortBy) {
+        case ORDER_BY_PRICE_ASC:
+            array_multisort($sorting, SORT_ASC, $products);
+            return $products;
+        case ORDER_BY_PRICE_DESC:
+            array_multisort($sorting, SORT_DESC, $products);
+            return $products;
+            break;
+        default:
+            break;
+    }
+}
+
+function getPreviousProduct($productId)
 {
     $products = getAvailableProducts();
-    foreach ($products as $product) {
-        if ($product['id'] == $id) {
-            return $product;
+    foreach ($products as $key => $product) {
+        if ($product['id'] == $productId) {
+            if ($key == 0) {
+                return $products[count($products) - 1]['id'];
+            } else {
+                return $products[$key - 1]['id'];
+            }
         }
     }
 }
 
-function sortAscending()
+function getNextProduct($productId)
 {
     $products = getAvailableProducts();
-    $price = array_column($products, 'price');
-    return array_multisort($price, SORT_ASC, $products);
-}
-
-function sortDescending()
-{
-    $products = getAvailableProducts();
-    foreach ($products as $key => $value) {
-        $price[$key] = $value['price'];
-    }
-    return array_multisort($price, SORT_DESC, $products);
-}
-
-function getNextProduct($id)
-{
-    $products = getAvailableProducts();
-    foreach ($products as $product) {
-        if ($product['id'] == $id) {
-            return $product;
-        }
-    }
-}
-
-function getPreviousProduct($id)
-{
-    $products = getAvailableProducts();
-    foreach ($products as $product) {
-        if ($product['id'] == $id) {
-            return $product;
+    foreach ($products as $key => $product) {
+        if ($product['id'] == $productId) {
+            if ($key == (count($products) - 1)) {
+                return $products[0]['id'];
+            } else {
+                return $products[$key + 1]['id'];
+            }
         }
     }
 }
@@ -279,9 +332,9 @@ function getRelatedProducs($mainProduct)
     $relatedProducts = [];
     $products = getAvailableProducts();
     foreach ($products as  $product) {
-        if ($product['category'] == $mainProduct['category'] && $mainProduct['id'] != $product['id']) {
+        if ($product['related'] == $mainProduct['related'] && $mainProduct['id'] != $product['id']) {
             $relatedProducts[] = $product;
-            if (count($relatedProducts) >= 3) {
+            if (count($relatedProducts) >= 4) {
                 break;
             }
         }

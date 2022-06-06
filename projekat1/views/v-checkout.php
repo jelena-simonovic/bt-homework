@@ -1,6 +1,6 @@
 <main class="container">
     <div class="row mb-5">
-        <form class="col-6 mt-5 mb-5 p-5 bg-light text-dark" action="./models/m-checkout.php" method="POST">
+        <form class="col-6 mt-5 mb-5 p-5 bg-light text-dark" action="./checkout-page.php" method="POST">
             <label class="form-label" for="name"> Name: </label>
             <input type="text" name="name" id="name">
             <br>

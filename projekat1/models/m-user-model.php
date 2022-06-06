@@ -1,5 +1,10 @@
 <?php
 
+function isValidPhone($phone)
+{
+    return true;
+}
+/*
 if (!empty($POST['name'])) {
     $name = trim($POST['name']);
 } else {
@@ -58,10 +63,4 @@ if (!empty($_POST['agree']) && $_POST['agree'] == true) {
     $agreeError = "You have to agree to our terms.";
 }
 
-/*3. ,
-. Sa desne strane trebaju da budu ispisan 
-proizvod koji se kupuje po sopstvenoj zelji. Na dugme BUY trebaju se iskoristiti svi parametri 
-sa forme kao i proizvoda da se ispise nesto o uspesnoj kupovini. Izvrsiti validaciju polja na
- formi i u slucaju da se desi greska ispisati odgovarajucu gresku ispod odgovarajuceg
- inputa.
  */
