@@ -25,7 +25,7 @@
                     <button class="list-group-item" type="submit" name="category[]" value="for_him">
                         Scents For HIM
                     </button>
-                    <button class="list-group-item" type="submit" name="category[]" value="for_her">
+                    <button class="list-group-item" type="submit" name="category[]" value="unisex">
                         Unisex Scents
                     </button>
 
@@ -60,7 +60,7 @@
                                 <span class="card-subtitle text-muted"><?php echo htmlspecialchars($product['brand']); ?></span>
                                 <p class="card-title"><?php echo htmlspecialchars($product['title']); ?></p>
                                 <p>$<?php echo htmlspecialchars($product['price']); ?></p>
-                                <a class="btn btn-dark" id="btn-grad" href="./single-product-page.php?stranica=<?php echo htmlspecialchars($product['id']) ?>">Show Product</a>
+                                <a class="btn btn-outline-secondary" href="./single-product-page.php?stranica=<?php echo htmlspecialchars($product['id']) ?>">Show Product</a>
                             </div>
                         </article>
                     <?php } ?>
